@@ -9,4 +9,4 @@ services:
             - 8000:8000
         image: django:dj-dc
         container_name: django_attendence
-        command: python manage.py runserver 0.0.0.0:8000
+        command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
