@@ -1,0 +1,6 @@
+venv/*
+doubts.txt 
+
+# avoiding environment variables file 
+.env
+

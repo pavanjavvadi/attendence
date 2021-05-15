@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    django:
+        build: .
+        volumes:
+            - .:/application_code
+        ports:
+            - 8000:8000
+        image: django:dj-dc
+        container_name: django_attendence
+        command: python manage.py runserver 0.0.0.0:8000
